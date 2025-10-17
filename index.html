@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Top 10 Renowned Scientists</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<h1>Top 10 Renowned Scientists</h1>
+</header>
+<main>
+<section class="scientist-list" aria-label="List of Renowned Scientists">
+<!-- List will be dynamically injected here --></section>
+<section class="add-scientist">
+<h2>Add a Scientist</h2>
+<form id="scientistForm" aria-label="Add Scientist Form">
+<label for="nameInput">Name:</label>
+<input type="text" id="nameInput" name="name" required aria-required="true" />
+<label for="fieldInput">Field:</label>
+<input type="text" id="fieldInput" name="field" required aria-required="true" />
+<label for="bioInput">Bio:</label>
+<textarea id="bioInput" name="bio" rows="3" required aria-required="true"></textarea>
+<button type="submit">Add Scientist</button>
+</form>
+<div class="feedback" id="feedback" aria-live="polite"></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
