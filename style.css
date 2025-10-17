@@ -1,0 +1,92 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+.scientist-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.scientist {
+  background-color: #fafafa;
+  border-radius: 6px;
+  padding: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.scientist:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.scientist h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2em;
+}
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1em;
+}
+button:hover {
+  background-color: #357abd;
+}
+.add-scientist form {
+  display: flex;
+  flex-direction: column;
+}
+.add-scientist label {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.add-scientist input, .add-scientist textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+}
+.feedback {
+  margin-top: 1rem;
+  color: #d9534f;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
